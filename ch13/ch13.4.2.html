@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5的input标记新增部分属性的应用</title>
+</head>
+<body>
+    <fieldset style="text-align: center;border: 1px solid red;">
+        <legend align="center">
+            用户登录
+        </legend>
+            <form action="">
+                姓名：<input type="text" name="name" placeholder="请输入姓名" autofocus="autofocus" id="">
+                班级：<input type="text" name="class" placeholder="请输入班级" list="class_list" id="">
+                <datalist id="class_list">
+                    <option value="15计算机1班"></option>
+                    <option value="15软件工程"></option>
+                    <option value="15信息管理与信息系统"></option>
+                    <option value="15电子信息工程"></option>
+                </datalist>
+                <input type="image" src="./eg_submit.png" width="35" height="35" name="" id="">
+            </form>
+            <p>
+                下面的输入域在form元素之外，但仍然是表单的一部分。
+            </p>
+            密码：<input type="password" name="user_key" form="myform" id="">
+    </fieldset>
+</body>
+</html>

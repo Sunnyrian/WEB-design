@@ -1,0 +1,18 @@
+img{
+    float: left;
+    border: 1px dashed gray;
+    margin: 10px 10px 10px 0;
+    fill: 5px;
+}
+
+span{
+    font-size: 3em;
+    float:top;
+    letter-spacing: 0;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background-color: #678;
+}

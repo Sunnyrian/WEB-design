@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021-11-18签到</title>
+    <style>
+        button{
+            width: 50px;
+            font-size: 2em;
+        }
+        select{
+            width: 80px;
+            font-size: 2em;
+        }
+        textarea{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        function changeFontSize(){
+            p1.style.fontSize=myForm.se.value+"px";
+        }
+
+        function bolder(){
+            var x=p1.style.fontWeight;
+            if (x!="bolder"){
+                p1.style.fontWeight="bolder";
+                btb.style.fontWeight="normal";
+            }
+            else{
+                p1.style.fontWeight="normal";
+                btb.style.fontWeight="bolder";
+            }
+        }
+
+        function italic(){
+            var x=p1.style.fontStyle;
+            if (x!="italic"){
+                p1.style.fontStyle="italic";
+                bti.style.fontStyle="normal";
+            }
+            else{
+                p1.style.fontStyle="normal";
+                bti.style.fontStyle="italic";
+            }
+        }
+
+
+        function underline(){
+            var x=p1.style.textDecoration;
+            if (x!="underline"){
+                p1.style.textDecoration="underline";
+                btu.style.textDecoration="none";
+            }
+            else{
+                p1.style.textDecoration="none";
+                btu.style.textDecoration="underline";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <form action="" name="myForm">
+            <select name="se" onchange="changeFontSize()" id="">
+                <option value="24">
+                    24
+                </option>  
+                <option value="30">
+                    30  
+                </option>  
+                <option value="36">
+                    36
+                </option> 
+                <option value="40">
+                    40
+                </option> 
+                <option value="46">
+                    46
+                </option> 
+            </select>
+            <button id="btb" type="button" onclick="bolder()" style="font-weight: bolder">
+                B
+            </button>
+            <button id="bti" type="button" onclick="italic()" style="font-weight: bolder; font-style: italic;">
+                /
+            </button>
+            <button id="btu" type="button" onclick="underline()" style="font-weight: bolder; text-decoration: underline;">
+                U
+            </button>
+            <br>
+        </form>
+        <textarea id="p1" cols="30" rows="10">
+            MAC地址（英语：Media Access Control Address），直译为媒体存取控制位址，也称为局域网地址（LAN Address），MAC位址，以太网地址（Ethernet Address）或物理地址（Physical Address），它是一个用来确认网络设备位置的位址。在OSI模型中，第三层网络层负责IP地址，第二层数据链路层则负责MAC位址 [1]  。MAC地址用于在网络中唯一标示一个网卡，一台设备若有一或多个网卡，则每个网卡都需要并会有一个唯一的MAC地址
+        </textarea>
+    </div>
+</body>
+</html>

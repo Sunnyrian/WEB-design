@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抽奖签到</title>
+    <script>
+        function fun(){
+            var s=["gck","wsy","gt","dj"];
+            var i=Math.round(Math.random()*3)
+            document.getElementById("p1").innerText=s[i];
+        }
+    </script>
+</head>
+<body>
+    <p id="p1">
+
+    </p>
+    <br>
+    <button type="button" onclick="fun()">
+        刷新
+    </button>
+</body>
+</html>

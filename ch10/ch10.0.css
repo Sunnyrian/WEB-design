@@ -1,0 +1,92 @@
+#row1{
+    height: 50px;
+    width: 100%;
+    background-color: bisque;
+}
+
+#row2{
+    height: 20px;
+    width: 100%;
+    background-color:darkorange;
+}
+
+#row3{
+    height: 500px;
+    width: 100%;
+    background-color: blue;
+}
+
+#row4{
+    height: 50px;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+#row3-c1{
+    height: 100%;
+    width: 34%;
+    float:left;
+    background-color: brown;
+}
+
+#row3-c1-r1{
+    height: 25%;
+    width: 100%;
+    background-color: burlywood;
+}
+
+#row3-c1-r2{
+    height: 25%;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+#row3-c1-r3{
+    height: 25%;
+    width: 100%;
+    background-color: chartreuse;
+}
+
+#row3-c1-r4{
+    height: 25%;
+    width: 100%;
+    background-color: chocolate;
+}
+
+#row3-c2{
+    height: 100%;
+    width: 33%;
+    float:left;
+    background-color: coral;
+}
+
+#row3-c2-r1{
+    height: 40%;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+#row3-c2-r2{
+    height: 60%;
+    width: 100%;
+    background-color: cornsilk;
+}
+
+#row3-c3{
+    height: 100%;
+    width: 33%;
+    float:left;
+    background-color: crimson;
+}
+
+#row3-c3-r1{
+    height: 30%;
+    width: 100%;
+    background-color: cyan;
+}
+
+#row3-c3-r2{
+    height: 70%;
+    width: 100%;
+    background-color: darkcyan;
+}

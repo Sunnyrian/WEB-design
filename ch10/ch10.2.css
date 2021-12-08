@@ -1,0 +1,59 @@
+#logo{
+    height: 100px;
+    width: 100%;
+    background: pink;
+}
+
+#nav{
+    height: 60px;
+    width: 100%;
+    background: plum;
+    margin-top: 5px;
+}
+
+#row3{
+    height: 600px;
+    width: 100%;
+}
+
+#Content-Left{
+    margin-top: 5px;
+    height: 100%;
+    width: 24%;
+    background: powderblue;
+    float:left;
+}
+
+#Content-center-left{
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 100%;
+    width: 24.5%;
+    background: purple;
+    float:left;
+}
+
+#Content-center-right{
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 100%;
+    width: 25%;
+    background: rebeccapurple;
+    float:left;
+}
+
+#Content-right{
+    margin-left: 5px;
+    margin-top: 5px;
+    height: 100%;
+    width: 25%;
+    background: red;
+    float:left;
+}
+
+#footer{
+    margin-top: 10px;
+    height: 100px;
+    width: 100%;
+    background:lightsalmon;
+}

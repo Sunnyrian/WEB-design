@@ -1,0 +1,43 @@
+#top{
+    background: darkgray;
+    width: 500px;
+    margin: 0 auto;
+}
+
+#display{
+
+    height: 80px;
+    text-align: center;
+}
+
+#display div{
+    width: 97.5%;
+    height: 80px;
+    background: cornsilk;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+#outside{
+    width: 500px;
+    height: 500px;
+    background: darkgray;
+    margin: 0 auto;
+}
+
+#inside{
+    height: 98%;
+    width: 98%;
+    margin: 0 auto;
+    font-size: 25px;
+    border-collapse: 5px;
+    border-spacing: 25px;
+    border: 1px solid #000;
+}
+
+#inside td{
+    border: 1px solid #000;
+    text-align: center;
+    height: 30px;
+    width: 50px;
+}

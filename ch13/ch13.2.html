@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3动画</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            animation: mymove 5s infinite;
+            color: white;
+        }
+
+        div{
+            text-align: center;
+        }
+
+        @keyframes mymove
+        {
+            from,0% {
+                left: 0px;
+                background: red;
+                top: 0px;
+            }
+            25% {
+                left:0px;
+                background: green;
+                top: 500px;
+            }
+            50% {
+                left: 500px;
+                background: steelblue;
+                top: 500px;
+            }
+            75%{
+                left: 500px;
+                background: violet;
+                top: 0px;
+            }
+            to,100% {
+                left: 0px;
+                background: blue;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        CSS3动画-沿矩形对角线运动
+    </h3>    
+    <div>
+        我在运动!
+    </div>
+</body>
+</html>

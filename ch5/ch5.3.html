@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            浮动框架中打开新页面
+        </title>
+        <style>
+            h3{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+            a{
+                margin-left: 300px;
+                margin-right: 300px;
+            }
+            iframe{
+                width: 49%;
+                height: 800px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>
+            浮动框架中打开新页面
+        </h3>
+            <iframe name="left-iframe" src="http://bilibili.com">
+            </iframe>
+            <iframe name="right-iframe" src="http://taobao.com">
+            
+            </iframe>
+            <p>
+                <a href="https://1688.com" target="left-iframe">
+                    在左边浮动框架中打开1688
+                </a>
+                <a href="https://www.qq.com" target="right-iframe">
+                    在右边浮动框架中打开腾讯新闻
+                </a>
+            </p>
+    </body>
+</html>

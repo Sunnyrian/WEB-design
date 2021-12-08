@@ -1,0 +1,84 @@
+body{
+    display: block;
+}
+#row1{
+    width: 100%;
+}
+
+#row1-c1{
+    float: left;
+    background: url("./src/Header.jpg") no-repeat;
+    width: 22%;
+    height: 118px;
+    background-color: bisque;
+}
+
+#row1-c2{
+    background-color: bisque;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    width: 78%;
+    height: 118px;
+}
+
+.ul-row1{
+    margin-top: 45px;
+    list-style-type: none;
+}
+
+.ul-row1 li{
+    display: inline;
+}
+
+
+.ul-row2{
+    margin-left: 25%;
+    list-style-type: none;
+    float: left;
+    margin-top: 70px;
+}
+
+.ul-row2 li{
+    padding-top: 30px;
+}
+
+#row2{
+    width: 100%;
+    height: 747px;
+}
+
+#row2-c1{
+    margin-top: 7px;
+    width: 22%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    background: darkgoldenrod;
+}
+
+#row2-c2{
+    margin-top: 7px;
+    width: 77.5%;
+    float: left;
+    margin-left: 0.5%;
+    background: pink;
+    text-align: center;
+}
+
+#row3{
+    margin-top: 7px;
+    background: darkmagenta;
+    float:left;
+    width: 100%;
+}
+
+#copyright{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:darkcyan;
+}

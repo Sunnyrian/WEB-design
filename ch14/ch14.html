@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script type="text/javascript">
+        function inputData(){
+            var name = prompt("请输入姓名：");
+            var score = prompt("请输入web程序设计课程的成绩：");
+            var string = confirm( "姓名为  " +name+ " , 成绩为 " + score + " ,确定提交吗");
+            if ( string == true)
+            {
+                t1.innerHTML +="<tr><td>" + name + "</td><td>" + score + "</td><td><input type='button' value='删除' onclick='deleteData(this)'></td><td><input type='button' value='修改' onclick='changeData(this)'></td>"
+            } else{
+                alert("取消提交成绩！");
+            }
+        }
+        function deleteData(x){
+            var s = confirm("真的要删除记录："+x.parentNode.parentNode.firstChild.innerHTML);
+            if(s == true){
+                var i = x.parentNode.parentNode.rowIndex;
+                t1.deleteRow(i);
+            }
+        }
+        function changeData(xr){
+            var name = prompt("请输入姓名：");
+            var score = prompt("请输入web程序设计课程的成绩：");
+            x.parentNode.parentNode.innerHTML ="<tr><td>" + name + "</td><td><input type='button' value='删除' onclick='dele(this)'></td><td><input type='button' value='修改' onclick='chan(this)'></td>"
+        }
+        function changeTextColor(){
+            if(p1.style.color=="black"){
+                p1.style.color="white";
+                p1.style.background="black";
+            }
+            else{
+                p1.style.background="white"
+                p1.style.color="black"
+            }
+        }
+    </script>
+    <style>
+        #div1{
+            margin: 0 auto;
+            margin-top: 50px;
+            border: 1px solid palegreen;
+            width: 500px;
+            text-align: center;
+        }
+        table{
+            margin: 0 auto;
+            width: 100px;
+            height: 26px;
+            margin-bottom: 20px;
+            border: 1px solid springgreen;
+        }
+        p{
+            user-select: none;
+        }
+        #div2{
+		    width: 500px;
+            margin: 0 auto;
+		    background-color: pink;
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		    padding: 1px;
+		}
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1" onclick="changeTextColor()">
+            点击按钮输入成绩
+        </p>
+        <button type="button" onclick="inputData()">
+            输入成绩
+        </button>
+        <br>
+        <br>
+        <table id="t1">
+            
+        </table>
+    </div>
+    <div id="div2">
+        <form class="form-01">
+            <p onclick="changeTextColor()">
+            请输入数字:(-10000,10000)∈R
+            </p>
+            1:<input type="text"><br>
+            2:<input type="text"><br>
+            3:<input type="text"><br>
+            4:<input type="text"><br>
+            5:<input type="text"><br>
+            6:<input type="text"><br>
+        </form>
+        <br>
+        <button id="bt1">计算平均值</button>
+        <p id="t-avg" style="background-color: blanchedalmond;"></p>
+        <button id="bt2">计算最大值</button>
+        <p id="t-max" style="background-color: blanchedalmond;"></p>
+        <script>
+                var f1=document.querySelector(".form-01");
+		        var t_avg=document.querySelector("#t-avg");
+		        var t_max=document.querySelector("#t-max");
+		        var bt1=document.querySelector("#bt1");
+		        var bt2=document.querySelector("#bt2");
+		        bt1.onclick=function(){
+		            var sum=0,len,num=0;
+		            len=f1.length;
+		            console.log(len);
+		            for (i=0;i<len;i++){
+		                if (f1[i].value!=''){
+		                    sum+= f1[i].value*1;
+		                    num++;
+		                }
+		            }
+		            t_avg.innerHTML='平均值为'+sum/num;
+		        }
+		        bt2.onclick=function(){
+		            var a=0;
+					var n=0;
+					for(i=0;i<f1.length;i++){
+						if(f1[i].value>a){
+							a=f1[i].value;
+							n++;
+						}
+					}
+					t_max.innerHTML="最大值为"+a;
+		        }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021-12-7签到</title>
+</head>
+<body>
+    <canvas id="c1" width="" height="300px" style="border: 1px solid;">
+
+    </canvas>
+    <script>
+        var a=document.getElementById("c1");
+        var pen=a.getContext("2d");
+        
+        pen.beginPath();
+        pen.arc(100,100,80,0,Math.PI * 2,true);
+        pen.closePath();
+        pen.fillStyle="red";
+        pen.fill();
+
+        pen.moveTo(180,60);
+        pen.lineTo(180,200);
+        
+        pen.strokeStyle="blueviolet";
+        pen.lineWidth=5;
+        pen.stroke();
+
+        pen.font="22px 黑体";
+        pen.fillStyle="blue";
+        pen.fillText("190021104452 郭传坤",30,100)
+    </script>
+</body>
+</html>

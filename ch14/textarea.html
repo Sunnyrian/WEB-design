@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>简易文本编辑器</title>
+    <style>
+        button{
+            width: 50px;
+            font-size: 2em;
+        }
+        select{
+            width: 80px;
+            font-size: 2em;
+        }
+        textarea{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<script type="text/javascript">
+    function setColor(obj) {
+        document.execCommand("forecolor", false, obj.value);
+    }
+
+    function setFontSize(obj) {
+        document.execCommand("FontSize", false, obj.value);
+    }
+    function changeFontSize(){
+            div1.style.fontSize=myForm.se.value+"px";
+        }
+
+    function bolder(){
+        var x=div1.style.fontWeight;
+        if (x!="bolder"){
+            div1.style.fontWeight="bolder";
+            btb.style.fontWeight="normal";
+        }
+        else{
+            div1.style.fontWeight="normal";
+            btb.style.fontWeight="bolder";
+        }
+    }
+
+    function italic(){
+        var x=div1.style.fontStyle;
+        if (x!="italic"){
+            div1.style.fontStyle="italic";
+            bti.style.fontStyle="normal";
+        }
+        else{
+            div1.style.fontStyle="normal";
+            bti.style.fontStyle="italic";
+        }
+    }
+
+
+    function underline(){
+        var x=div1.style.textDecoration;
+        if (x!="underline"){
+            div1.style.textDecoration="underline";
+            btu.style.textDecoration="none";
+        }
+        else{
+            div1.style.textDecoration="none";
+            btu.style.textDecoration="underline";
+        }
+    }
+</script>
+
+<body>
+    <div id="">
+        <form name="myForm">
+            <select name="se" onchange="changeFontSize()" id="">
+                <option value="24">
+                    24
+                </option>  
+                <option value="30">
+                    30  
+                </option>  
+                <option value="36">
+                    36
+                </option> 
+                <option value="40">
+                    40
+                </option> 
+                <option value="46">
+                    46
+                </option> 
+            </select>
+            <button id="btb" type="button" onclick="bolder()" style="font-weight: bolder">
+                B
+            </button>
+            <button id="bti" type="button" onclick="italic()" style="font-weight: bolder; font-style: italic;">
+                /
+            </button>
+            <button id="btu" type="button" onclick="underline()" style="font-weight: bolder; text-decoration: underline;">
+                U
+            </button>
+            颜色：
+            <input type="color" name="" id="" value="" onclick="setColor(this)" /> 字号：
+            <select onchange="setFontSize(this)">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+				</select> 样式：
+            <select onchange="document.execCommand(value)">
+					<option value="bold">Bold</option>
+					<option value="italic">Italic</option>
+					<option value="underline">Underline</option>
+				</select> 字体：
+            <select onchange="document.execCommand('Fontname',false,value)">
+					<option value="serif">Serif</option>
+					<option value="sans-serif">Sans-serif</option>
+					<option value="monospace">Monospace</option>
+					<option value="comic sans ms">Comic Sans</option>
+				</select>
+            <input type="button" name="" id="" value="Cut" onclick="document.execCommand('cut')" />
+            <input type="button" name="" id="" value="Paste" onclick="div1.focus();document.execCommand('paste')" />
+        </form>
+    </div>
+    <br>
+    <div id="div1" contenteditable="true" style="width: 100%; height: 300px; border: 2px dashed black;">
+        MAC地址（英语：Media Access Control Address），直译为媒体存取控制位址，也称为局域网地址（LAN Address），MAC位址，以太网地址（Ethernet Address）或物理地址（Physical Address），它是一个用来确认网络设备位置的位址。在OSI模型中，第三层网络层负责IP地址，第二层数据链路层则负责MAC位址 [1]  。MAC地址用于在网络中唯一标示一个网卡，一台设备若有一或多个网卡，则每个网卡都需要并会有一个唯一的MAC地址
+    </div>
+</body>
+
+</html>
